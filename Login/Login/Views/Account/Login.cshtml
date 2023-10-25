@@ -1,0 +1,44 @@
+﻿@model Login.ViewModels.LoginViewModel
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anurag Codes</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/styleVic.css" />
+</head>
+<body>
+
+
+
+    <div class="login-box">
+        <form method="post">
+            <h1 class="text-white">Registro</h1>
+
+            <div class="user-box">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="input-box">
+                    <input asp-for="Email" class="form-control text-white" placeholder="Correo" required />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="user-box">
+                <input asp-for="Password" class="form-control text-white" placeholder="Contraseña" required />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+         <button type="submit" class="btn btn-light">Enviar</button>
+
+        </form>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
